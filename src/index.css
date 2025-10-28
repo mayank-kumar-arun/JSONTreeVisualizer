@@ -1,0 +1,30 @@
+
+
+ @import "tailwindcss";
+
+:root[data-theme="light"] {
+  --bg-color: #f3f4f6; 
+  --text-color: #1f2937; 
+  --card-bg: #ffffff;
+  --border-color: #d1d5db;
+}
+
+:root[data-theme="dark"] {
+  --bg-color: #000000;
+  --text-color: black;
+  --card-bg: white;
+  --border-color: #333333;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+textarea,
+input,
+button,
+div {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
